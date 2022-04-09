@@ -1,0 +1,51 @@
+span {
+    background-color: brown;
+    border: 3px solid white;
+    padding: 3px;
+    margin: 15px;
+}
+.big-dino {
+    color:beige;
+    font-size: 40px;
+}
+.flying-dino {
+    color:beige;
+    font-size: 40px;
+}
+.little-dino {
+    color:beige;
+    font-size: 40px;
+}
+#dino-pic {
+    width: 400px;
+    padding: 30px;
+}
+.miss-dino > p {
+    font-size:30px;
+    color: beige;
+    display: inline-block;
+}
+div.miss-dino {
+    background-color: brown;
+    color: bisque;
+}
+a {
+    color:brown;
+}
+h1, h2 {
+    color: beige;
+    font-size: 55px;
+}
+body {
+    background-color: white;
+}
+h1 {
+    background-color: brown;
+}
+h2 {
+    background-color: brown;
+    font-family: Arial;
+}
+img {
+    display: block;
+}
