@@ -1,0 +1,55 @@
+Last login: Fri Apr  8 11:51:40 on ttys001
+~ $ # cd into the assignments>exerises folder
+git clone https://github.com/VSchool/daily-planet-editor
+cd daily-planet-editor/
+
+zsh: command not found: #
+Cloning into 'daily-planet-editor'...
+remote: Enumerating objects: 36, done.
+remote: Total 36 (delta 0), reused 0 (delta 0), pack-reused 36
+Receiving objects: 100% (36/36), 4.37 KiB | 1.09 MiB/s, done.
+Resolving deltas: 100% (12/12), done.
+~/daily-planet-editor $ code .
+~/daily-planet-editor $ ls
+README.md	paper.js
+~/daily-planet-editor $ git add -A
+~/daily-planet-editor $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+~/daily-planet-editor $ git add -A
+~/daily-planet-editor $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   paper.js
+
+~/daily-planet-editor $ git commit
+hint: Waiting for your editor to close the file... 
+"Complete changes to daily planet editor"
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#       modified:   paper.js
+#
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
