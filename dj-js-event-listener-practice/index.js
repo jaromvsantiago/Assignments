@@ -5,7 +5,7 @@ djSquare.addEventListener("mouseover", blueSquare)
 djSquare.addEventListener("mousedown", redSquare)
 djSquare.addEventListener("mouseup", yellowSquare)
 djSquare.addEventListener("dblclick", greenSquare)
-djSquare.addEventListener("wheel", orangeSquare)
+window.addEventListener("wheel", orangeSquare)
 
 function blueSquare (){
     djSquare.style.backgroundColor = "blue"
