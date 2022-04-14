@@ -6,6 +6,7 @@ djSquare.addEventListener("mousedown", redSquare)
 djSquare.addEventListener("mouseup", yellowSquare)
 djSquare.addEventListener("dblclick", greenSquare)
 window.addEventListener("wheel", orangeSquare)
+djSquare.addEventListener("keydown", blueTyped)
 
 function blueSquare (){
     djSquare.style.backgroundColor = "blue"
@@ -25,3 +26,22 @@ function orangeSquare (){
 function defaultSquare (){
     djSquare.style.backgroundColor = "pink"
 }
+
+function blueTyped(){
+    djSquare.style.backgroundColor = "blue"
+}
+/*
+function colorTyped(event){
+    var letter = event.key;
+    if (letter = "b"){
+        djSquare.style.backgroundColor = "blue";
+    } else if (letter = "r"){
+        djSquare.style.backgroundColor = "red";
+    } else if (letter = "y"){
+        djSquare.style.backgroundColor = "yellow";
+    } else if (letter = "g"){
+        djSquare.style.backgroundColor = "green";
+    } else if (letter = "o"){
+        djSquare.style.backgroundColor = "orange";
+    }
+} */
