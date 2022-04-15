@@ -1,11 +1,11 @@
 var djSquare = document.getElementById("square")
 
-djSquare.addEventListener("mouseout", defaultSquare)
 djSquare.addEventListener("mouseover", blueSquare)
 djSquare.addEventListener("mousedown", redSquare)
 djSquare.addEventListener("mouseup", yellowSquare)
 djSquare.addEventListener("dblclick", greenSquare)
 window.addEventListener("wheel", orangeSquare)
+
 
 function blueSquare (){
     djSquare.style.backgroundColor = "blue"
@@ -22,38 +22,21 @@ function greenSquare (){
 function orangeSquare (){
     djSquare.style.backgroundColor = "orange"
 }
-function defaultSquare (){
-    djSquare.style.backgroundColor = "pink"
-}
 
 
-/*
-djSquare.addEventListener("keydown", event => {
-    if (event.code === 66){
+
+window.addEventListener("keydown", event => {
+    console.log(event)
+    if (event.key === "b"){
         djSquare.style.backgroundColor = "blue"
-    } else if (event.code === 82){
+    } else if (event.key === "r"){
         djSquare.style.backgroundColor = "red"
-    } else if (event.code === 89){
+    } else if (event.key === "y"){
         djSquare.style.backgroundColor = "yellow"
-    } else if (event.code === 71){
+    } else if (event.key === "g"){
         djSquare.style.backgroundColor = "green"
-    } else if (event.code === 79){
+    } else if (event.key === "o"){
         djSquare.style.backgroundColor = "orange"
     }
-})*/
-
-/*
-document.addEventListener("keydown", KeyboardEvent => {
-    if (KeyboardEvent.code === 66){
-        djSquare.style.backgroundColor = "blue";
-    } else if (KeyboardEvent.code === 82){
-        djSquare.style.backgroundColor = "red";
-    } else if (KeyboardEvent.code === 89){
-        djSquare.style.backgroundColor = "yellow";
-    } else if (KeyboardEvent.code === 71){
-        djSquare.style.backgroundColor = "green";
-    } else if (KeyboardEvent.code === 79){
-        djSquare.style.backgroundColor = "orange";
-    }
-})*/
+})
 
