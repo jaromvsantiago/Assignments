@@ -16,14 +16,31 @@ var messagesRight = document.getElementsByClassName("message right")
 messagesRight[0].textContent = "You look good";
 messagesRight[1].textContent = "Have a great day!";
 
+var firstLeftMsg = document.getElementsByClassName("left message")[0];
+var secondLeftMsg = document.getElementsByClassName("left message")[1];
+var firstRightMsg = document.getElementsByClassName("right message")[0];
+var secondRightMsg = document.getElementsByClassName("right message")[1];
+
 var clearButton = document.getElementById('clear-button')
 
 function clearMessages(){
-    document.getElementsByClassName("message left")[0].textContent = null
-    document.getElementsByClassName("message left")[1].textContent = null
-    document.getElementsByClassName("message right")[0].textContent = null
-    document.getElementsByClassName("message right")[1].textContent = null
+    firstLeftMsg.textContent = null
+    secondLeftMsg.textContent = null
+    firstRightMsg.textContent = null
+    secondRightMsg.textContent = null
 }
 
 clearButton.addEventListener("click", clearMessages)
 
+//Silver
+
+var themeDropDown = document.getElementById("theme-drop-down")
+
+function changeTheme(){
+    firstLeftMsg.style.backgroundColor = "red";
+    secondLeftMsg.style.backgroundColor = "red";
+    firstRightMsg.style.backgroundColor = "black";
+    secondRightMsg.style.backgroundColor = "black";
+
+}
+themeDropDown.addEventListener("change", changeTheme)
