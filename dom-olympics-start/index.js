@@ -44,3 +44,21 @@ function changeTheme(){
 
 }
 themeDropDown.addEventListener("change", changeTheme)
+
+//Gold
+
+var form = document.querySelector(".messageForm");
+var send = form.querySelector(".sendButton")
+var newWords = form.querySelector(".input");
+var messageBoard = document.querySelector(".messages");
+newWords.className = "letters";
+var newText = document.createElement("div")
+
+console.log(newWords)
+form.addEventListener("submit", e => {
+    e.preventDefault()
+    console.log("newWords")
+    newWords.textContent = newText.textContent
+    console.log(newWords);
+    messageBoard.appendChild(newText);
+})
