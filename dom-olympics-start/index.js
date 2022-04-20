@@ -58,7 +58,7 @@ console.log(newWords)
 form.addEventListener("submit", e => {
     e.preventDefault()
     console.log("newWords")
-    newWords.textContent = newText.textContent
+    newText.textContent = newWords.value
     console.log(newWords);
     messageBoard.appendChild(newText);
 })
