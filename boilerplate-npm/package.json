@@ -1,6 +1,7 @@
 {
 	"author": "Jarom Santiago",
 	"description": "My project that will be great",
+	"keywords": ["dinosaur", "awesome" ,"freecodecamp"],
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
 		"express": "^4.14.0"
