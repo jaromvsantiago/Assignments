@@ -26,7 +26,7 @@ for(var i = 0; i <= 100; i++){
 }
 console.log(numHundo)
 var fruitTwo = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
-for(i = 0; i <= fruitTwo.length; i += 2){
+for(i = 0; i < fruitTwo.length; i += 2){
     if(fruitTwo.length % 2 === 0){
         //fruitTwo.push(i)
         console.log(fruitTwo[i])
