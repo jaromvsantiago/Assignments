@@ -10,7 +10,7 @@ var reverseNumbers = numbers.reverse()
 console.log(reverseNumbers)
 /*for(var i = numbers.length - 1; i >= 0; i--){
     console.log(i)
-} Other way to reverse array*/
+}  -----Other way to reverse array*/
 superNumbers.push(numbers)
 for(var i = 0; i < fruit.length; i++){
     console.log(fruit[i])

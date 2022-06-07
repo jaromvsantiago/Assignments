@@ -16,3 +16,4 @@ if (operation[index] === "divide"){
 }
 if (operation[index] === "multiply"){
     console.log("The result is: ", Number(num1) * Number(num2))
+}
