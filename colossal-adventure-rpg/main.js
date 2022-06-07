@@ -92,26 +92,10 @@ function walking(){
         encounter()
     }
     else{
-        console.log(heroId)
+        console.log(heroId) 
         walking()
     }
 }
 
 
-function fight(){
-    const fightOrRun = readline.keyIn(`F to fight or R to run `, {limit: `fr`})
-    if(fightOrRun === `f`){
-        console.log(`USER ATTACK!`)
-        if(chooseEnemy.health < heroId.attack){
-            console.log(`You defeated ${chooseEnemy.name}`)
-            heroId.push(chooseEnemy.item)
-        }else if(heroId.attack < chooseEnemy.health){
-            console.log(`You were too weak! ${chooseEnemy.name} attacks back`)
-            console.log(`You have been defeated`)
-        }
-    } else { 
-        console.log(`USER RUN!: escape succesful!`)
-        walking()
-    }
-}
 walking()
