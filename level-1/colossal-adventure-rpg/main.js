@@ -1,6 +1,6 @@
 const readline = require("readline-sync")
 const heroId = []
-heroId.attack = 10
+heroId.attack = 5
 heroId.health = 10
 heroId.item = `hands`
 const enemies = [
@@ -93,6 +93,25 @@ function walking(){
     }
     else{
         console.log(heroId) 
+        walking()
+    }
+}
+
+function fightKyle(){
+    while(heroId.health > 0){
+        return walking()
+    }
+    const fightOrRun = readline.keyIn(`F to fight or R to run `, {limit: `fr`})
+    if(fightOrRun === `f`){
+        if(enemies.name === "Kyle"){
+            enemies.health - heroId.attack
+        }
+        if(heroId.attack < chooseEnemy.health){
+            console.log(`${chooseEnemy.name} is too strong! keep walking`)
+            walking()
+        }
+    }else if(fightOrRun === `r`){ 
+        console.log(`USER RUN!: escape succesful!`)
         walking()
     }
 }

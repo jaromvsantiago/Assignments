@@ -1,0 +1,181 @@
+#title {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#mario {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+#baddiesForm{
+    display: grid;
+}
+#goombapic {
+    display: inline-flex;
+    width: 10%;
+}
+#bobombpic{
+    display: inline-flex;
+    width: 10%;
+}
+#cheeppic{
+    display: inline-flex;
+    width: 10%;
+}
+#bob{
+    width: 150px;
+}
+#goombatext{
+    font-style: italic;
+    color: brown;
+}
+#bobtext{
+    font-style: italic;
+    color: navy;
+}
+
+#cheeptext{
+    font-style: italic;
+    color: red;
+}
+
+#cheep{
+    width: 170px;
+}
+.totalBox{
+    display: inline-block;
+    width: 200px;
+    border: 1px solid red;
+    font-size: larger;
+    color: blue;
+}
+
+
+@media only screen and (min-width: 700px){
+    #goombapic {
+        display: inline-block;
+        width: 10%;
+    }
+    #bobombpic{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;        
+        width: 10%;
+        position: relative;
+        bottom: 120px;
+    }
+    #cheeppic{
+        display: flex;
+        position: relative;
+        width: 10%;
+        bottom: 120px;
+    }
+    #bob{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
+    #goombatext{
+        font-style: italic;
+        color: brown;
+    }
+    #bobtext{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: italic;
+        color: navy;
+        position: relative;
+        bottom: 120px;
+    }
+    
+    #cheeptext{
+        position: relative;
+        font-style: italic;
+        color: red;
+        bottom: 120px;
+    }
+    
+    #cheep{
+        width: 170px;
+    }
+    #submit{
+        position: relative;
+        bottom: 100px;
+    }
+    .totalBox{
+        display: inline-block;
+        width: 200px;
+        border: 1px solid red;
+        font-size: larger;
+        color: blue;
+        position: relative;
+        bottom: 100px;
+    }
+}
+@media only screen and (min-width: 868px){
+    #goombapic {
+        display: inline-block;
+        width: 10%;
+    }
+    #bobombpic{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;        
+        width: 10%;
+        position: relative;
+        bottom: 120px;
+    }
+    #cheeppic{
+        display: flex;
+        position: relative;
+        width: 10%;
+        bottom: 120px;
+    }
+    #bob{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
+    #goombatext{
+        font-style: italic;
+        color: brown;
+    }
+    #bobtext{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: italic;
+        color: navy;
+        position: relative;
+        bottom: 120px;
+    }
+    
+    #cheeptext{
+        position: relative;
+        font-style: italic;
+        color: red;
+        bottom: 120px;
+    }
+    
+    #cheep{
+        width: 170px;
+    }
+    #submit{
+        position: relative;
+        bottom: 100px;
+    }
+    .totalBox{
+        display: inline-block;
+        width: 200px;
+        border: 1px solid red;
+        font-size: larger;
+        color: blue;
+        position: relative;
+        bottom: 100px;
+    }
+}
+

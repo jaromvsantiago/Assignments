@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="click-display"></h1>
+    </div>
+    <script>
+
+        var display = document.getElementById('click-display');
+        var clickBtn = document.getElementById('clickBtn')
+        var clicks = 0
+        function getClick(){
+            clicks += 1
+            display.textContent = clicks
+            localStorage.setItem("clicks", clicks)
+
+        }
+    
+    </script>
+    <button id="clickBtn" onclick="getClick()">CLICK ME</button>
+
+</body>
+
+
+
+</html>
