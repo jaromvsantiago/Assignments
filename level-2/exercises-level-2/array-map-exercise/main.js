@@ -1,28 +1,19 @@
 //#1
-let theNums = [2, 5, 100]
 function doubleNumbers(arr){
-    return arr * 2;
-}
-console.log(theNums.map(doubleNumbers))
-console.log(theNums.map(function(number){
-    return number * 2;
-}))
-
-//#2
-function stringItUp(arr){
-    // your code here
+    let dblNumbers = arr.map(num => num * 2)
+    return dblNumbers
   }
   
-  //console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
+  console.log(doubleNumbers([2, 5, 100])); // [4, 10, 200]
 
-const arrOfNum = [2, 5, 100];
-
-const arrOfStr = arrOfNum.map(num => {
-  return String(num);
-});
-
-console.log(arrOfNum.join(","))
-console.log(arrOfStr);
+//#2 
+function stringItUp(arr){
+    let stringNum = arr.map(num => String(num))
+    return stringNum
+  }
+  
+  console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
+  
 
 //#3
 
@@ -157,4 +148,4 @@ function capitalizeNames(arr){
   // "<h1>Eric Jones</h1><h2>2</h2>",
   // "<h1>Paris Hilton</h1><h2>5</h2>",
   // "<h1>Kayne West</h1><h2>16</h2>",
-  // "<h1>Bob Ziroll</h1><h2>100</h2>"]
+  // "<h1>Bob Ziroll</h1><h2>100</h2>"] 
