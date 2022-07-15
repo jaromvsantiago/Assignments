@@ -57,12 +57,33 @@ console.log(combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals))
 
 //#7
 function product(a, b, c, d, e) {
-    var numbers = [a,b,c,d,e];
+    let numbers = [a,b,c,d,e];
   
-    return numbers.reduce(function(acc, number) {
+    return numbers.reduce((acc, number) => {
       return acc * number;
     }, 1)
   }
-  
+//#8
+function unshift(array, ...array2) {
+    return [...array2, array];
+  }
+//#9
 
+function populatePeople(names){
+    return names.map(function(name){
+        name = name.split(" ");
+        const [firstName, lastName] = name
+        return {
+            firstName: firstName,
+            lastName: lastName
+        }
+    })
+}
+
+console.log(populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"]))
+//[
+//  {firstName: "Frank", lastName: "Peterson"},
+//  {firstName: "Suzy", lastName: "Degual"},
+//  {firstName: "Liza", lastName: "Jones"},
+//]
 
